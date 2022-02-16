@@ -10,9 +10,10 @@
 		31F337A727BD969A002D5186 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F337A627BD969A002D5186 /* AppDelegate.swift */; };
 		31F337A927BD969A002D5186 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F337A827BD969A002D5186 /* SceneDelegate.swift */; };
 		31F337AB27BD969A002D5186 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F337AA27BD969A002D5186 /* ViewController.swift */; };
-		31F337AE27BD969A002D5186 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31F337AC27BD969A002D5186 /* Main.storyboard */; };
 		31F337B027BD969E002D5186 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31F337AF27BD969E002D5186 /* Assets.xcassets */; };
 		31F337B327BD969E002D5186 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31F337B127BD969E002D5186 /* LaunchScreen.storyboard */; };
+		31F337BB27BD970C002D5186 /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F337BA27BD970C002D5186 /* ScoreViewController.swift */; };
+		31F337BE27BD97A3002D5186 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31F337BC27BD97A3002D5186 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +21,11 @@
 		31F337A627BD969A002D5186 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		31F337A827BD969A002D5186 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		31F337AA27BD969A002D5186 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		31F337AD27BD969A002D5186 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		31F337AF27BD969E002D5186 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		31F337B227BD969E002D5186 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		31F337B427BD969E002D5186 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31F337BA27BD970C002D5186 /* ScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
+		31F337BD27BD97A3002D5186 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../Downloads/Quiz App Starter 2/Timer App/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,8 +61,9 @@
 				31F337A627BD969A002D5186 /* AppDelegate.swift */,
 				31F337A827BD969A002D5186 /* SceneDelegate.swift */,
 				31F337AA27BD969A002D5186 /* ViewController.swift */,
-				31F337AC27BD969A002D5186 /* Main.storyboard */,
+				31F337BA27BD970C002D5186 /* ScoreViewController.swift */,
 				31F337AF27BD969E002D5186 /* Assets.xcassets */,
+				31F337BC27BD97A3002D5186 /* Main.storyboard */,
 				31F337B127BD969E002D5186 /* LaunchScreen.storyboard */,
 				31F337B427BD969E002D5186 /* Info.plist */,
 			);
@@ -125,9 +128,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31F337BE27BD97A3002D5186 /* Main.storyboard in Resources */,
 				31F337B327BD969E002D5186 /* LaunchScreen.storyboard in Resources */,
 				31F337B027BD969E002D5186 /* Assets.xcassets in Resources */,
-				31F337AE27BD969A002D5186 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,26 +144,27 @@
 				31F337AB27BD969A002D5186 /* ViewController.swift in Sources */,
 				31F337A727BD969A002D5186 /* AppDelegate.swift in Sources */,
 				31F337A927BD969A002D5186 /* SceneDelegate.swift in Sources */,
+				31F337BB27BD970C002D5186 /* ScoreViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		31F337AC27BD969A002D5186 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				31F337AD27BD969A002D5186 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		31F337B127BD969E002D5186 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				31F337B227BD969E002D5186 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		31F337BC27BD97A3002D5186 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				31F337BD27BD97A3002D5186 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
