@@ -50,7 +50,7 @@ class ViewController: UIViewController, ViewControllerDelegate {
     
     func nextQuestion() {
         if currentQuestion >= questions.count - 1 {
-            performSegue(withIdentifier: "ScoreSegue", sender: nil)
+            performSegue(withIdentifier: "ShowScoreSegue", sender: nil)
             return
         }
         currentQuestion += 1

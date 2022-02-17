@@ -13,7 +13,7 @@
 		31F337B027BD969E002D5186 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31F337AF27BD969E002D5186 /* Assets.xcassets */; };
 		31F337B327BD969E002D5186 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31F337B127BD969E002D5186 /* LaunchScreen.storyboard */; };
 		31F337BB27BD970C002D5186 /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F337BA27BD970C002D5186 /* ScoreViewController.swift */; };
-		31F337BE27BD97A3002D5186 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31F337BC27BD97A3002D5186 /* Main.storyboard */; };
+		31F337C027BEB420002D5186 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31F337BF27BEB420002D5186 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +25,7 @@
 		31F337B227BD969E002D5186 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		31F337B427BD969E002D5186 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		31F337BA27BD970C002D5186 /* ScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
-		31F337BD27BD97A3002D5186 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../Downloads/Quiz App Starter 2/Timer App/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
+		31F337BF27BEB420002D5186 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +63,7 @@
 				31F337AA27BD969A002D5186 /* ViewController.swift */,
 				31F337BA27BD970C002D5186 /* ScoreViewController.swift */,
 				31F337AF27BD969E002D5186 /* Assets.xcassets */,
-				31F337BC27BD97A3002D5186 /* Main.storyboard */,
+				31F337BF27BEB420002D5186 /* Main.storyboard */,
 				31F337B127BD969E002D5186 /* LaunchScreen.storyboard */,
 				31F337B427BD969E002D5186 /* Info.plist */,
 			);
@@ -128,7 +128,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31F337BE27BD97A3002D5186 /* Main.storyboard in Resources */,
+				31F337C027BEB420002D5186 /* Main.storyboard in Resources */,
 				31F337B327BD969E002D5186 /* LaunchScreen.storyboard in Resources */,
 				31F337B027BD969E002D5186 /* Assets.xcassets in Resources */,
 			);
@@ -157,14 +157,6 @@
 				31F337B227BD969E002D5186 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		31F337BC27BD97A3002D5186 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				31F337BD27BD97A3002D5186 /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
