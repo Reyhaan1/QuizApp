@@ -18,8 +18,12 @@ class ScoreViewController: UIViewController {
         scoreLabel.text = "Score \(score) / 10"
     }
     
-    @IBAction func acceptButtonDidTouch(_ sender: Any) {
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
         viewControllerDelegate?.restartQuiz()
+    }
+    
+    @IBAction func acceptButtonDidTouch(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
     

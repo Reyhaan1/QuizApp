@@ -110,7 +110,7 @@ class ViewController: UIViewController, ViewControllerDelegate {
     
     func showIncorrectAnswerAlert() {
         let alert = UIAlertController(title: "Wrong!", message: "You got the answer wrong!", preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "OK", style: .default) { action in
+                let okAction = UIAlertAction(title: "OK", style: .default) { action in
             alert.dismiss(animated: true, completion: nil)
             self.nextQuestion()
         }
