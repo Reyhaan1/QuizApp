@@ -20,7 +20,7 @@ protocol ViewControllerDelegate: AnyObject {
 }
 
 
-class ViewController: UIViewController, ViewControllerDelegate {
+class ViewController: UIViewController {
     
     @IBOutlet weak var questionImageView: UIImageView!
     @IBOutlet weak var answer1Button: UIButton!
@@ -79,22 +79,7 @@ class ViewController: UIViewController, ViewControllerDelegate {
         destinationVC.viewControllerDelegate = self
     }
     
-    func restartQuiz() {
-        score = 0
-        currentQuestion = 0
-        scoreLabel.text = "Score: \(score)"
-        questionImageView.image = UIImage(named: questions[currentQuestion].answerImage)
-        let answer1AttributedTitle = NSAttributedString(string: questions[currentQuestion].answer1, attributes: [.foregroundColor: UIColor.white, .font: UIFont.systemFont(ofSize: 20, weight: .heavy)])
-        answer1Button.setAttributedTitle(answer1AttributedTitle, for: .normal)
-        
-        let answer2AttributedTitle = NSAttributedString(string: questions[currentQuestion].answer2, attributes: [.foregroundColor: UIColor.white, .font: UIFont.systemFont(ofSize: 20, weight: .heavy)])
-        answer2Button.setAttributedTitle(answer2AttributedTitle, for: .normal)
-        
-        let answer3AttributedTitle = NSAttributedString(string: questions[currentQuestion].answer3, attributes: [.foregroundColor: UIColor.white, .font: UIFont.systemFont(ofSize: 20, weight: .heavy)])
-        answer3Button.setAttributedTitle(answer3AttributedTitle, for: .normal)
-        
-        questionLabelChange.text = "Question \(currentQuestion + 1)"
-    }
+    
     
     func showCorrectAnswerAlert() {
         score += 1
@@ -144,6 +129,21 @@ class ViewController: UIViewController, ViewControllerDelegate {
     }
 }
 
-
-
-
+extension ViewController: ViewControllerDelegate {
+    func restartQuiz() {
+        score = 0
+        currentQuestion = 0
+        scoreLabel.text = "Score: \(score)"
+        questionImageView.image = UIImage(named: questions[currentQuestion].answerImage)
+        let answer1AttributedTitle = NSAttributedString(string: questions[currentQuestion].answer1, attributes: [.foregroundColor: UIColor.white, .font: UIFont.systemFont(ofSize: 20, weight: .heavy)])
+        answer1Button.setAttributedTitle(answer1AttributedTitle, for: .normal)
+        
+        let answer2AttributedTitle = NSAttributedString(string: questions[currentQuestion].answer2, attributes: [.foregroundColor: UIColor.white, .font: UIFont.systemFont(ofSize: 20, weight: .heavy)])
+        answer2Button.setAttributedTitle(answer2AttributedTitle, for: .normal)
+        
+        let answer3AttributedTitle = NSAttributedString(string: questions[currentQuestion].answer3, attributes: [.foregroundColor: UIColor.white, .font: UIFont.systemFont(ofSize: 20, weight: .heavy)])
+        answer3Button.setAttributedTitle(answer3AttributedTitle, for: .normal)
+        
+        questionLabelChange.text = "Question \(currentQuestion + 1)"
+    }
+}
